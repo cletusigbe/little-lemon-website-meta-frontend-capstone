@@ -1,0 +1,59 @@
+footer {
+  grid-column: 1 / span 12;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 2.25rem 0 !important;
+  min-height: 80px;
+  width: 100%;
+  height: 100%;
+  background-color: #495E57;
+  flex-wrap: wrap;
+  box-shadow: var(--box-shadow-3);
+  color: #FFFFFF;
+}
+
+.footer-logo {
+  height: 155px;
+}
+
+footer section:not(#LL-SocialMediaWidget),
+.LL-Logo.LL-FooterLogo {
+  padding: 0 40px;
+}
+
+footer section[class^='LL-Footer'] {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.LL-FooterNavigation > ul > li,
+.LL-FooterNavigation > ul > li > a {
+  padding: 4px 0;
+  text-decoration: none;
+  list-style: none;
+  background-color: none;
+}
+
+
+.footer-navbar li {
+  list-style: none;
+}
+
+.footer-navbar li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width:769px){
+  footer {
+    padding: 2.25rem 0 !important;
+  }
+
+footer section:not(#LL-SocialMediaWidget),
+.LL-Logo.LL-FooterLogo {
+  padding: 0 20px;
+}
+}
