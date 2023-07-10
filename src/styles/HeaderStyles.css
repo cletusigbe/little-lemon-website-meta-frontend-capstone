@@ -64,14 +64,22 @@ nav{
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 90px;
+    top: 78px;
     right: -250px;
     width: 250px;
     height: 100vh;
     background: #495E57;
-    box-shadow: 0 40px 60px rgba(0, gree0n, 0, 0.1);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
     padding: 40px 0 0 10px;
   }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+  /* #navbar::-webkit-scrollbar {
+    display: none;
+  } */
 
   #navbar.active{
     right: 0px;
