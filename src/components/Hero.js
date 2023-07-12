@@ -5,6 +5,7 @@ import HeroImage from "../assets/greek-salad.jpg"
 
 const Hero = () => {
   return (
+    <>
     <section className="Hero">
       <div className="Hero-left">
         <h1>
@@ -28,6 +29,7 @@ const Hero = () => {
         />
       </div>
     </section>
+    </>
   )
 }
 

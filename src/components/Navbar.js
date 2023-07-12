@@ -29,7 +29,6 @@ class Navbar extends Component {
           <i id="bar"
           className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
-
       </nav>
     </>
   )
