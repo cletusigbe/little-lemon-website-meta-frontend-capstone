@@ -31,43 +31,35 @@ const SpecialCards = () => {
 ]
 
 const specialMenusItems = specialMenus.map(menu => {
-  const image = menu.image;
-  const title = menu.title;
-  const price = menu.price;
-  const description = menu.description;
-  const order = menu.order;
+  const images = menu.image;
+  const titles = menu.title;
+  const prices = menu.price;
+  const descriptions = menu.description;
+  const orders = menu.order;
 
   return (
       <div>
           <div className="special-card-container">
               <div className="image-container">
-                      <img src={image} alt="Special dessert" />
+                      <img src={images} alt="Special dessert" />
                   </div>
               <div className="special-card-text">
                   <div className="special-card-title">
-                      <h3>{title}</h3>
-                      <h3 className="price-tag">{price}</h3>
+                      <h3>{titles}</h3>
+                      <h3 className="price-tag">{prices}</h3>
                   </div>
-                  <p>{description}</p>
-                  <div className="order-now"><Link to="/reservation">{order}</Link></div>
-                  {/* <NavLink to="#">
-                      <h4>
-                          {order}
-                          { <MdDeliveryDining size={30} style={{ color: "#333333", marginLeft: "10px",}} /> }
-                      </h4>
-                  </NavLink> */}
+                  <p>{descriptions}</p>
+                  <div className="order-now"><Link to="/reservation">{orders}</Link></div>
               </div>
           </div>
       </div>
   )
-})
+});
 
   return (
-    <div>
-      <div className="special-card">
-        {specialMenusItems}
-      </div>
-    </div>
+        <div className="special-card">
+          {specialMenusItems}
+        </div>
   )
 }
 
