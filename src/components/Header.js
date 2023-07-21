@@ -3,6 +3,14 @@ import Logo from "../assets/logo.jpg";
 import "../styles/HeaderStyles.css"
 import { Link } from "react-router-dom";
 
+const handleClickScroll = () => {
+  const element = document.getElementById('about-section');
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 class Header extends Component{
   state={clicked: false};
   handlecClick = () => {
@@ -17,11 +25,11 @@ class Header extends Component{
         <div>
           <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar"}>
             <li><Link to="/" className="active">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about">AboutUs</Link></li>
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/reservation">Reservation</Link></li>
             <li><Link to="/order">Order</Link></li>
-            <li><Link to="/login">Login</Link></li>
+            <li><Link>Login</Link></li>
           </ul>
         </div>
 

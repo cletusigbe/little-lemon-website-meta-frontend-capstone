@@ -3,7 +3,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import Specials from '../components/Specials'
 import Testimonials from '../components/Testimonials'
-// import SpecialCards from '../components/SpecialCards'
+import About from '../components/About'
 
 function Home() {
   return (
@@ -11,8 +11,7 @@ function Home() {
       <Hero />
       <Specials />
       <Testimonials />
-      {/* <SpecialCards /> */}
-      {/* <div>This is Home Page</div> */}
+      <About />
     </main>
   )
 }

@@ -1,0 +1,41 @@
+.confirmation-header {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: -1.4rem;
+  min-height: 70vh;
+}
+
+.reserve-header-text {
+  background-color: #495e57;
+  padding: 3rem 3rem 3rem 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  border-radius: 0.5rem;
+}
+
+.reserve-header-text h4{
+  font-size: 18px;
+}
+
+@media screen and (max-width: 657px){
+  .confirmation-header {
+    min-height: 80vh;
+  }
+  .reserve-header-text {
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    border-radius: 0.5rem;
+  }
+
+  .reserve-header-text h1{
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
